@@ -1,4 +1,4 @@
-#coder :- syamsi
+#code:{syamsi}
 
 import sys
 from time import sleep
@@ -10,13 +10,13 @@ from gpiozero import LED
 red = LED(17)
 
 #LED
-def on():
+def on(): # turn on LED
         red.on()
         return
-def off():
+def off(): #turn off LED
         red.off()
         return
-def blink():
+def blink(): #make LED blink
 	count = 0
 	while (count < 9): 
 		red.on()
