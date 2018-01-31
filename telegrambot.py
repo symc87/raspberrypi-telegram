@@ -39,7 +39,7 @@ def handle(msg):
     elif (command == 'blink' or command == 'Blink'):
        bot.sendMessage(chat_id, blink())
 
-bot = telepot.Bot('529721689:AAE46-AE6dhjMI9PWwwHnYd-y4pHkw2mU34')
+bot = telepot.Bot('529721689:AAE46-AE6dhjM78PWwwHnYd-y4pHkw2mU34')
 bot.message_loop(handle)
 print ('I am listening...')
 
