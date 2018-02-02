@@ -39,7 +39,9 @@ def handle(msg):
     elif (command == 'blink' or command == 'Blink'):
        bot.sendMessage(chat_id, blink())
 
-bot = telepot.Bot('TOKEN')
+TOKEN = sys.argv[1]  # get token from command-line
+
+bot = telepot.Bot(TOKEN)
 bot.message_loop(handle)
 print ('I am listening...')
 
