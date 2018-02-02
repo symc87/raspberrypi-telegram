@@ -46,7 +46,9 @@ def on_callback_query(msg):
     elif query_data == 'blink':
         bot.answerCallbackQuery(query_id, blink())
 
-bot = telepot.Bot('TOKEN')
+TOKEN = sys.argv[1]  # get token from command-line
+
+bot = telepot.Bot(TOKEN)
 MessageLoop(bot, {'chat': on_chat_message,
                   'callback_query': on_callback_query}).run_as_thread()
 print('Listening ...')
