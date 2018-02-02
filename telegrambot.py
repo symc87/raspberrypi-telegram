@@ -47,3 +47,5 @@ print ('I am listening...')
 
 while 1:
      sleep(10)
+
+#write in terminal command <python3 telegrambot.py TOKEN>
